@@ -3,6 +3,7 @@
 public class main {
  public static void main(String[] args) {
  Product product = new Product("Edam", 3.3, 120);
+ product.changeBalance(1000); // Testing new balance;
  System.out.println("Product value is " + product.countValue());
  product.printProduct();
  }
@@ -15,6 +16,11 @@ public Product(String name, double price, int amount) {
 this.name = name;
 this.price = price;
 this.amount = amount;
+}
+//Adding method for branch b1.
+public double changeBalance(int newvalue){
+this.amount = newvalue;
+return (amount);
 }
 
 public double countValue() {
