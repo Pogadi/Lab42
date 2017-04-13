@@ -3,7 +3,8 @@
 public class main {
  public static void main(String[] args) {
  Product product = new Product("Edam", 3.3, 120);
- product.changeBalance(1000); // Testing new balance;
+ product.changePrice(5); // Testing new price method;
+ product.changeBalance(1000); // Testing new balance method;
  System.out.println("Product value is " + product.countValue());
  product.printProduct();
  }
@@ -20,7 +21,12 @@ this.amount = amount;
 //Adding method for branch b1.
 public double changeBalance(int newvalue){
 this.amount = newvalue;
-return (amount);
+return amount;
+}
+//Adding method for branch b2
+public double changePrice(double newprice){
+this.price = newprice;
+return price;
 }
 
 public double countValue() {
