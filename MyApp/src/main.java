@@ -18,7 +18,7 @@ this.price = price;
 this.amount = amount;
 }
 //Adding method for branch b1.
-public double changeBalance(int newvalue){
+public int changeBalance(int newvalue){
 this.amount = newvalue;
 return (amount);
 }
